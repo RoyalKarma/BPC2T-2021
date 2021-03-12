@@ -2,13 +2,13 @@ package cv5;
 
 public class Naradi extends Zbozi {
 	
-	private int zaruka;
+	private int zaruka; //pouze cele cisla
 
-	public Naradi(String jmeno, double cena, int zarka) {
-		super(jmeno, cena);
-		this.zaruka = zarka;
+	public Naradi(String jmeno, double cena, int zaruka) { //konstruktor child tridy
+		super(jmeno, cena); //Volaní konstruktoru nadrazene tridy
+		this.zaruka = zaruka;
 	}
-
+//gettery a settery
 	public int getZaruka() {
 		return zaruka;
 	}
@@ -19,7 +19,7 @@ public class Naradi extends Zbozi {
 
 	@Override
 	public String getJednotka() {
-		return "mìsícù";
+		return "mesicu";
 	}
 	
 	
